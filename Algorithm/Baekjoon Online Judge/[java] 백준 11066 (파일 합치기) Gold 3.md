@@ -12,6 +12,8 @@ DP를 이용한 문제로, DP[i][j] = i ~ j까지의 파일을 합치는 최소 
 
 의외로 간단한 문제이다.
 
+## Code
+
 ```java
 import java.io.*;
 import java.util.StringTokenizer;
