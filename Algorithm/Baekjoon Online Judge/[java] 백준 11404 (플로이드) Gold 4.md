@@ -12,6 +12,8 @@ distance[i][j] 는 i부터 j까지 가는 최단경로비용이다.
 
 distance[i][j] = min(distance[i][j], distance[i][k] + distance[k][j])	(i <= k <= j) 이다.
 
+플로이드 와샬 알고리즘은 O(n^3)의 시간복잡도를 가지고 있다.
+
 플로이드 와샬 알고리즘에 대해 자세히 알고 싶다면 다음 링크가 도움이 될 것이다.
 
 [안경잡이 개발자님의 네이버블로그](https://blog.naver.com/ndb796/221234427842)

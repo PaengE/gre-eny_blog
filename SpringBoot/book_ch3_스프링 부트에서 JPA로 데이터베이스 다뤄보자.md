@@ -169,3 +169,23 @@ JpaRepository를 상속한 인터페이스는 save(), findAll() 등의 메소드
 - `@LastModifiedDate`
   - 조회한 Entity의 값을 변경할 때 시간이 자동 저장된다.
 
+## Model
+
+```java
+import org.springframework.ui.Model;
+
+@Controller
+public class IndexController {
+    private final PostsService postsService;
+
+    @GetMapping("/")
+    public String index(Model model) {
+        model.addAttribute("posts", postsService.findAllDesc());
+        return "index";
+    }
+}
+```
+
+- 서버 템플릿 엔진에서 사용할 수 있는 객체를 저장할 수 있다.
+- model.addAttribute("posts", postsService.findAllDesc());
+  - `postsService.findAllDesc()`로 가져온 결과를 posts로 index.mustache에 전달한다.
