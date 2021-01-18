@@ -4,6 +4,10 @@
 
 이 문제는 [백준 1915번 가장 큰 정사각형](https://www.acmicpc.net/problem/1915) 문제와 유사하다.
 
+아래는 내 풀이에 대한 포스팅이다.
+
+[2021/01/13 - [Algorithm/Baekjoon Online Judge\] - [java] 백준 1915 (가장 큰 정사각형) Gold 5](https://gre-eny.tistory.com/103)
+
 DP로 풀 수 있는 문제로, DP[i][j] 는 (i, j) 위치에서 좌상으로 진행했을 때 만들수 있는 가장 큰 정사각형의 한 변의 길이이다.
 
 따라서 주어진 board[i][j] 가 1이라면 일단 최소 1x1 정사각형을 만들 수 있으므로 dp[i][j] = 1을 저장한다.
