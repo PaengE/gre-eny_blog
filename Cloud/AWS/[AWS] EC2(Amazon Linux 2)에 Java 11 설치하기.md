@@ -50,3 +50,9 @@ $ yum list installed | grep "java" # yum 설치 리스트 확인
 $ sudo yum remove java-1.8.0-openjdk-headless.x86_64 
 ```
 
+
+
+## Refer to
+
+- [AWS Corretto JDK List](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html)
+
